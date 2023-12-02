@@ -12,7 +12,7 @@ This Tic-Tac-Toe game is a web application developed using React, showcasing var
 
 ## Screenshoots
 
-![Image](https://github.com/Hanzalashaik/project-management-app/blob/main/public/project%20landing%20page.png "Image")
+![Image](https://github.com/Hanzalashaik/Tic-Tac-Toe/blob/main/public/tic%20tac.png "Image")
 
 
 ## Installation
