@@ -7,9 +7,7 @@
 html {
   font-family: 'Roboto Slab', sans-serif;
   line-height: 1.5;
-
   color: #ebe7ef;
-
   font-synthesis: none;
   text-rendering: optimizeLegibility;
   -webkit-font-smoothing: antialiased;
@@ -56,6 +54,7 @@ h1 {
   box-shadow: 0 0 20px rgba(0, 0, 0, 0.5);
   position: relative;
 }
+
 
 #players {
   list-style: none;
@@ -347,5 +346,84 @@ ol {
   }
   100% {
     transform: scale(1);
+  }
+}
+
+@media screen and (max-width: 767px) {
+  body {
+    min-height: auto;
+    background-size: cover;
+  }
+
+  header img {
+    width: 6rem;
+    margin: 2rem auto 1rem auto;
+  }
+
+  h1 {
+    font-size: 2rem;
+    margin-bottom: 2rem;
+  }
+
+  #game-container {
+    max-width: 100%;
+    margin: 2rem auto;
+    padding: 1.5rem;
+    border-radius: 4px;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.5);
+  }
+
+  /* Update other elements as needed for mobile layout */
+  #players {
+    flex-direction: column;
+    gap: 1rem;
+    margin: 1rem 0;
+    width: 100%;
+  }
+
+  #players li {
+    width: 100%;
+    text-align: center;
+  }
+
+  #players button {
+    width: 100%;
+    margin: 0;
+  }
+
+  .player {
+    width: 100%;
+    margin-bottom: 1rem;
+  }
+
+  .player-name,
+  .player input {
+    width: 100%;
+    text-align: center;
+  }
+
+  #game-board {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    gap: 1.5rem;
+    margin: 2rem auto;
+    padding: 0;
+  }
+
+  #game-board ol {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    gap: 1rem;
+    margin: 0;
+    padding: 0;
+  }
+
+  #game-board button {
+    width: 5rem;
+    height: 5rem;
+    font-size: 2.5rem;
+    padding: 0.5rem;
   }
 }
